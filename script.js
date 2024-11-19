@@ -46,20 +46,21 @@ function playRound(UserChoice, ComputerChoice) {
             console.log("You win! Scissor beats Paper");
             UserScore++;
         } else if (UserChoice === ComputerChoice) {
-            console.log(`Draw! your choice was ${getUserChoice()} while the computer choice was ${
-              getComputerChoice()}`);
+            console.log(`Draw! your choice was ${UserChoice()} while the computer choice was ${
+              ComputerChoice()}`);
         }
     
 //  console.log(`your score ${UserScore} and the computer score is ${ComputerScore}, if you wanna play again, refresh the window!`);
 }
 
-UserChoice = getUserChoice();
-ComputerChoice = getComputerChoice();
+
 
 
 
 function playGame(Round) {
     for (let i = 1; i <= Round; i++) {
+        UserChoice = getUserChoice();
+        ComputerChoice = getComputerChoice();
         playRound(UserChoice, ComputerChoice);
         console.log(`Round ${i}`);
     }
