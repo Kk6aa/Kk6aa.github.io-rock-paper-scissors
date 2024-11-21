@@ -1,0 +1,48 @@
+body {
+    margin: 30px;
+    background-color: antiquewhite;
+
+}
+
+#selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rounds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
+}
+
+button {
+    background-color: rgb(37, 50, 77);
+    color: rgb(171, 224, 207);
+    margin: 10px;
+    padding: 4px 20px 4px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button:hover {
+    transition: 0.4s ease-in-out;
+    background-color: goldenrod;
+    color: black;
+}
+
+button:active {
+    transition: 0.1s ease-in-out;
+    background-color: rgb(255, 183, 0);
+    color: rgb(6, 59, 59);
+}
